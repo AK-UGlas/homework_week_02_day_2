@@ -13,6 +13,12 @@ class TestCalculator(unittest.TestCase):
     def test_subtract(self):
         self.assertEqual(-3, subtract(self.first_num, self.second_num))
 
+    def test_multiply(self):
+        self.assertEqual(40, multiply(self.first_num, self.second_num))
+
+    def test_divide(self):
+        self.assertAlmostEqual(0.625, divide(self.first_num, self.second_num), 3)
+
     
 
     
